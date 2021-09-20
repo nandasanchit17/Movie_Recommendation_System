@@ -2,16 +2,16 @@
 {% block content %}
 
   {% if t=='s' %}
-  <div class="shadow p-3 mb-5 bg-white rounded">
-    <h3 style="color:rgb(0, 102, 255)">Sorry! This movie is not in our database.</h3>
-    <h3 style="color:rgb(0, 102, 255)">Please check if you spelled it correct.</h3>
-    <h3 style="color:rgb(0, 102, 255)">Or try with another movie.</h3>
-  </div>
+  
+    <h2 class="mb-0" style="color:#EC3B2B";>Sorry! This movie is not in our database.</h2>
+    <h2 class="mb-0" style="color:#EC3B2B">Please check if you spelled it correct.</h2>
+    <h2 class="mb-0" style="color:#EC3B2B">Or try with another movie.</h2>
+
 
   {% else %}
   <div class="shadow p-3 mb-5 bg-white rounded">
-    <h1 style="color:rgb(0, 102, 255)">"{{movie}}" is a great choice.</h1>
-    <h3 style="color:rgb(0, 102, 255)">Here are some more like this</h3>
+    <h2 class="mb-0" style="color:#EC3B2B">"{{movie}}" is a great choice.</h2>
+    <h2 class="mb-0" style="color:#EC3B2B">Here are some more like this</h2>
   </div>
 
     <ul class="list-group list-group-flush">

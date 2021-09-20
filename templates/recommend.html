@@ -3,15 +3,15 @@
 
   {% if t=='s' %}
   
-    <h2 class="mb-0" style="color:#EC3B2B";>Sorry! This movie is not in our database.</h2>
-    <h2 class="mb-0" style="color:#EC3B2B">Please check if you spelled it correct.</h2>
-    <h2 class="mb-0" style="color:#EC3B2B">Or try with another movie.</h2>
+    <h2  style="color:#EC3B2B";>Sorry! This movie is not in our database.</h2>
+    <h2  style="color:#EC3B2B">Please check if you spelled it correct.</h2>
+    <h2  style="color:#EC3B2B">Or try with another movie.</h2>
 
 
   {% else %}
   <div class="shadow p-3 mb-5 bg-white rounded">
-    <h2 class="mb-0" style="color:#EC3B2B">"{{movie}}" is a great choice.</h2>
-    <h2 class="mb-0" style="color:#EC3B2B">Here are some more like this</h2>
+    <h2 style="color:#EC3B2B">"{{movie}}" is a great choice.</h2>
+    <h2 style="color:#EC3B2B">Here are some more like this</h2>
   </div>
 
     <ul class="list-group list-group-flush">
@@ -19,6 +19,8 @@
         <li class="list-group-item" style="color:rgb(0, 179, 0)"><strong>{{m|capitalize}}</strong></li>
       {% endfor %}
     </ul>
+<br>
+<br>
   {% endif %}
 
 {% endblock %}
